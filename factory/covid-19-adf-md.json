@@ -1,0 +1,9 @@
+{
+	"name": "covid-19-adf-md",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "fe9df9d7-df85-4e08-9f66-15801fdff282",
+		"tenantId": "67ae8b72-ed21-40c6-8d15-bc8e234865c0"
+	}
+}
