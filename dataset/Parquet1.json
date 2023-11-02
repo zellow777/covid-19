@@ -1,0 +1,66 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Amazon_s3_test",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AmazonS3Location",
+				"bucketName": "s3-glue-athena-powerbi-test",
+				"folderPath": "data",
+				"fileName": "user.parquet"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "user_url",
+				"type": "UTF8"
+			},
+			{
+				"name": "last_online_date",
+				"type": "TIMESTAMP_MICROS"
+			},
+			{
+				"name": "num_watching",
+				"type": "INT_16"
+			},
+			{
+				"name": "num_completed",
+				"type": "INT_16"
+			},
+			{
+				"name": "num_on_hold",
+				"type": "INT_16"
+			},
+			{
+				"name": "num_dropped",
+				"type": "INT_16"
+			},
+			{
+				"name": "num_plan_to_watch",
+				"type": "INT_16"
+			},
+			{
+				"name": "num_days",
+				"type": "FLOAT"
+			},
+			{
+				"name": "mean_score",
+				"type": "FLOAT"
+			},
+			{
+				"name": "clubs",
+				"type": "UTF8"
+			},
+			{
+				"name": "user_id",
+				"type": "UTF8"
+			}
+		]
+	}
+}
